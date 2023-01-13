@@ -72,11 +72,13 @@ export class MapComponent implements AfterViewInit {
     const warehouseMarker = L.marker([50.28811, 2.81625], { icon: wareHouseIcon }).bindPopup('Mon entrepôt');
     const dainvilleMarker = L.marker([50.28179, 2.73898], { icon: leclercIcon }).bindPopup('Dainville');
     const seclinMarker = L.marker([50.54997, 3.05472], { icon: leclercIcon }).bindPopup('Seclin');
+    const carvinMarker = L.marker([50.49933, 2.94599], { icon: leclercIcon }).bindPopup('Carvin');
 
     tiles.addTo(this.map);
     warehouseMarker.addTo(this.map);
     dainvilleMarker.addTo(this.map);
     seclinMarker.addTo(this.map);
+    carvinMarker.addTo(this.map);
   }
 
   ngOnDestroy(): void {
