@@ -5,12 +5,16 @@ import { MaterialModule } from '../material.module';
 import { MapComponent } from './map/map.component';
 import { PageRoutingModule } from './page-routing.module';
 import { WarehouseComponent } from './warehouse/warehouse.component';
+import { DriversComponent } from './drivers/drivers.component';
+import { TrucksComponent } from './trucks/trucks.component';
 
 @NgModule({
   declarations: [
     MapComponent,
     PageComponent,
-    WarehouseComponent
+    WarehouseComponent,
+    DriversComponent,
+    TrucksComponent
   ],
   imports: [
     CommonModule,

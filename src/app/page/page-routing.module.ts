@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DriversComponent } from './drivers/drivers.component';
 import { MapComponent } from './map/map.component';
 import { PageComponent } from './page.component';
+import { TrucksComponent } from './trucks/trucks.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
 
 const routes: Routes = [
@@ -11,9 +13,9 @@ const routes: Routes = [
       { path: '', redirectTo: 'map', pathMatch: 'full' },
       { path: 'map', component: MapComponent },
       { path: 'warehouse', component: WarehouseComponent },
-      { path: 'drivers', component: MapComponent },
+      { path: 'drivers', component: DriversComponent },
       { path: 'markets', component: MapComponent },
-      { path: 'trucks', component: MapComponent },
+      { path: 'trucks', component: TrucksComponent },
       { path: 'suppliers', component: MapComponent }
     ]
   }

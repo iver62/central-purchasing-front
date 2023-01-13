@@ -1,6 +1,6 @@
-import { Subscription } from 'rxjs';
 import { AfterViewInit, Component } from '@angular/core';
 import * as L from 'leaflet';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-map',
@@ -31,7 +31,7 @@ export class MapComponent implements AfterViewInit {
     eventSource.addEventListener('EVENT_TYPE', e => {
       console.log(JSON.parse(e.data));
       const geoloc = JSON.parse(e.data);
-      if(this.truckMarker) {
+      if (this.truckMarker) {
         this.truckMarker.removeFrom(this.map);
       }
       this.truckMarker = L.marker([geoloc.latitude, geoloc.longitude], { icon: this.truckIcon }).bindPopup('Ma position');
